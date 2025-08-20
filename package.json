@@ -1,0 +1,35 @@
+{
+  "name": "manjeet-qe-showcase",
+  "version": "1.0.0",
+  "description": "cypress v14 cucumber typescript framework for qe showcase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cypress/webpack-preprocessor": "latest",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "allure-commandline": "^2.22.1",
+    "cypress": "^14.5.0",
+    "esbuild": "^0.17.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "multiple-cucumber-html-reporter": "^3.0.1",
+    "prettier": "^2.8.3",
+    "ts-loader": "latest",
+    "typescript": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/step_definitions/**/*.{js,ts}"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^10.0.2",
+    "cypress-data-session": "^2.7.0",
+    "cypress-localstorage-commands": "^2.2.3",
+    "cypress-map": "^1.21.0"
+  }
+}
